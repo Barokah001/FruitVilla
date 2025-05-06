@@ -42,12 +42,13 @@
     >
       <div class="h-[130svh]" style="background-color: rgba(0, 0, 0, 0.322)">
         <nav
-          class="flex justify-between content-center items-center h-20 bg-gray-800 text-white w-full md:fixed top-0 left-0 z-50 px-15"
+          class="flex justify-between content-center items-center h-20 bg-gray-800 text-white w-full md:fixed top-0 left-0 z-50 px-8 md:px-15"
         >
           <div>
             <h1 class="text-[20px]">Fruit<span>Villa</span></h1>
           </div>
-
+          <div class="flex md:hidden"><i class="las la-bars text-white text-[27px]"></i></div>
+          
           <div class="hidden md:flex">
             <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth"><a href="#home">Home</a></div>
             <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
@@ -84,12 +85,12 @@
       </div>
 
       <!-- Positioned Form -->
-      <div class="flex justify-center items-center w-full h-auto md:h-[330px] md:w-[85%] bg-white absolute top-150 md:left-25 text-black shadow-xl/30 rounded-md">
+      <div class="flex justify-center items-center w-full h-auto md:h-[330px] md:w-[80%] bg-white absolute top-170 md:top-150 md:left-25 text-black shadow-xl/30 rounded-md">
         <div class="flex flex-col md:flex-row justify-between items-center mx-20 my-12">
           <div class="">
             <div class="flex flex-col justify-start items-start">
               <h2 class="text-[18px] font-bold mb-2 text-gray-500">
-                Select Age
+                Select Location
               </h2>
               <div class="my-2">
                 <select
@@ -97,17 +98,17 @@
                   id="age"
                   class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
                 >
-                  <option value="0-5">Age</option>
-                  <option value="0-5">0 - 5</option>
-                  <option value="0-5">5 - 12</option>
-                  <option value="0-5">13 - 20</option>
-                  <option value="0-5">> 20</option>
+                  <option value="0-5">Location</option>
+                  <option value="0-5">Ibadan</option>
+                  <option value="0-5">Lagos</option>
+                  <option value="0-5">Abuja</option>
+                  <option value="0-5">Others</option>
                 </select>
               </div>
             </div>
             <div class="flex flex-col justify-start items-start">
               <h2 class="text-[18px] font-bold mb-2 text-gray-500">
-                Select Age
+                Select Preference
               </h2>
               <div class="my-2">
                 <select
@@ -115,11 +116,11 @@
                   id="age"
                   class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
                 >
-                  <option value="0-5">Age</option>
-                  <option value="0-5">0 - 5</option>
-                  <option value="0-5">5 - 12</option>
-                  <option value="0-5">13 - 20</option>
-                  <option value="0-5">> 20</option>
+                  <option value="0-5">Preference</option>
+                  <option value="0-5">Bitter</option>
+                  <option value="0-5">Sweet</option>
+                  <option value="0-5">Sour</option>
+                  <option value="0-5">Tasteless</option>
                 </select>
               </div>
             </div>
@@ -204,7 +205,7 @@
           </div>
           <div>
             <button
-              class="px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
+              class="my-5 px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
             >
               Search
             </button>
@@ -215,7 +216,7 @@
 
 
   <!-- OUR SERVICES -->
-    <div class=" flex flex-col md:flex-row items-center justify-between h-auto my-60 pt-50 gap-10 md:mx-15" id="services" data-aos="fade-up" data-aos-duration="3000">
+    <div class=" flex flex-col md:flex-row items-center justify-between h-auto my-60 pt-50 gap-10 md:mx-15 mt-80" id="services" data-aos="fade-up" data-aos-duration="3000">
       <div class="flex flex-col items-center justify-center h-[350px] border-1 border-gray-300 rounded-md w-[70%] md:w-[calc(33.3%-24px)] pt-2 text-gray-500 hover:bg-black hover:text-white">
         <i class="las la-truck text-[100px]"></i>
         <h2 class="text-[18px] font-bold mb-2">Fresh Fruit Delivery</h2>
@@ -258,7 +259,7 @@
 
     
 <!-- CAROUSELS -->
-    <div class="flex flex-col h-[750px] jusify-center items-center py-20 pt-30 bg-gray-100" id="newFruits" data-aos="fade-up" data-aos-duration="3000">
+    <div class="flex flex-col h-auto md:h-[750px] jusify-center items-center py-20 pt-30 bg-gray-100" id="newFruits" data-aos="fade-up" data-aos-duration="3000">
       <div class="flex flex-col items-center">
         <h3 class="text-[18px]">Check out the fruits in season</h3>
         <h2 class="text-[28px] font-bold">Fruits in season</h2>
@@ -469,9 +470,9 @@
 <!-- BRANDS -->
     <div class="h-[200px] md:h-[250px] md:my-30">
       <div class="flex justify-center items-center gap-0 md:gap-15">
-        <img src="/Images/Logo_1.png" alt="" class="h-[120px] w-[120px]">
-        <img src="/Images/logo_2.png" alt="" class="h-[150px] w-[150px]">
-        <img src="/Images/logo_3.png" alt="" class="h-[150px] w-[150px]">
+        <img src="/Images/Logo_1.png" alt="" class="h-[120px] w-[120px] hidden md:flex">
+        <img src="/Images/logo_2.png" alt="" class="h-[150px] w-[150px] hidden md:flex">
+        <img src="/Images/logo_3.png" alt="" class="h-[150px] w-[150px] hidden md:flex">
         <img src="/Images/logo_2.png" alt="" class="h-[150px] w-[150px]">
         <img src="/Images/Logo_1.png" alt="" class="h-[120px] w-[120px]">
         <img src="/Images/logo_3.png" alt="" class="h-[150px] w-[150px]">
@@ -504,7 +505,7 @@
         <div class="flex flex-col justify-center w-80 md:w-[calc(33.3%-24px)] my-3">
           <h3 class="py-4 text-[20px] font-bold">NEWS LETTER</h3>
           <p class="w-[80%] py-3">Subscribe to get latest news update and informations</p>
-          <input type="email" name="email" id="" placeholder="Add email" class="rounded-md shadow-gray-500/50">
+          <input type="email" name="email" id="" placeholder="Add email" class="rounded-md shadow-gray-500/50 text-black">
         </div>
       </div>
     </div>
