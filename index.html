@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FruitVilla</title>
+
+    <!-- TAILWIND CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- LINEAWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/099cf20b3d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <<<<<<AOS CDN>>>>>>>>>>> -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <!-- FLOWBITE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- HERO SECTION / HOME -->
+    <div
+      class="bg-no-repeat bg-cover w-full text-center h-[130svh] text-white" id="home"
+      style="
+        background: url(/Images/fruit_platter.jpg);
+        width: 100%;
+        background-size: cover;"
+    >
+      <div class="h-[130svh]" style="background-color: rgba(0, 0, 0, 0.322)">
+        <nav
+          class="flex justify-between content-center items-center h-20 bg-gray-800 text-white w-full md:fixed top-0 left-0 z-50 px-15"
+        >
+          <div>
+            <h1 class="text-[20px]">Fruit<span>Villa</span></h1>
+          </div>
+
+          <div class="hidden md:flex">
+            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth"><a href="#home">Home</a></div>
+            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
+              <a href="#services">Service</a>
+            </div>
+            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
+              <a href="#newFruits">New Fruits</a>
+            </div>
+            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
+              <a href="#allFruits">All Fruits</a>
+            </div>
+            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-[30px] md:text-[50px] font-bold text-color-white  mt-50">
+            Get your desired fruits at reasonable prices
+          </h1>
+          <p class="text-[18px] md:text-[28px] my-5 w-[70%]">
+            Your go-to spot for farm-fresh fruits and natural goodness.
+            Handpicked, healthy, and delivered right to your doorstep. Taste the
+            difference nature makes.
+          </p>
+          <div>
+            <button
+              class="px-8 py-3 md:px-13 md:py-5 bg-black hover:bg-transparent hover:border-1 hover:bg-border-white"
+            >
+              Contact US
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Positioned Form -->
+      <div class="flex justify-center items-center w-full h-auto md:h-[330px] md:w-[85%] bg-white absolute top-150 md:left-25 text-black shadow-xl/30 rounded-md">
+        <div class="flex flex-col md:flex-row justify-between items-center mx-20 my-12">
+          <div class="">
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age</option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age</option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age </option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age</option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age</option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="text-[18px] font-bold mb-2 text-gray-500">
+                Select Age
+              </h2>
+              <div class="my-2">
+                <select
+                  name="selectControl"
+                  id="age"
+                  class="pl-3 pr-45 md:pl-2 md:pr-30 py-5 text-gray-400 bg-gray-100 rounded-sm border-0"
+                >
+                  <option value="0-5">Age</option>
+                  <option value="0-5">0 - 5</option>
+                  <option value="0-5">5 - 12</option>
+                  <option value="0-5">13 - 20</option>
+                  <option value="0-5">> 20</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- OUR SERVICES -->
+    <div class=" flex flex-col md:flex-row items-center justify-between h-auto my-60 pt-50 gap-10 md:mx-15" id="services" data-aos="fade-up" data-aos-duration="3000">
+      <div class="flex flex-col items-center justify-center h-[350px] border-1 border-gray-300 rounded-md w-[70%] md:w-[calc(33.3%-24px)] pt-2 text-gray-500 hover:bg-black hover:text-white">
+        <i class="las la-truck text-[100px]"></i>
+        <h2 class="text-[18px] font-bold mb-2">Fresh Fruit Delivery</h2>
+        <p class="mx-6">
+          We deliver seasonal, handpicked fruits straight from local farms to
+          your home or office. Choose from curated boxes or build your own
+          custom basket — always fresh, always on time.
+        </p>
+        <hr
+          class="w-7 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"
+        />
+      </div>
+
+      <div class="flex flex-col items-center justify-center h-[350px] border-1 border-gray-300 rounded-md w-[70%] md:w-[calc(33.3%-24px)] pt-2 text-gray-500 hover:bg-black hover:text-white">
+        <i class="las la-calendar-alt text-[100px]"></i>
+        <h2 class="text-[18px] font-bold mb-2">Fruit Subscription Plans</h2>
+        <p class="mx-6">
+          Stay stocked with your favorites! Our flexible weekly or monthly fruit
+          box subscriptions ensure you never run out of healthy snacks. Perfect
+          for busy families, professionals, or health-conscious individuals.
+        </p>
+        <hr
+          class="w-7 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"
+        />
+      </div>
+
+      <div class="flex flex-col items-center justify-center h-[350px] border-1 border-gray-300 rounded-md w-[70%] md:w-[calc(33.3%-24px)] pt-2 text-gray-500 hover:bg-black hover:text-white">
+        <i class="las la-universal-access text-[100px]"></i>
+        <h2 class="text-[18px] font-bold mb-2">Corporate & Event Supply</h2>
+        <p class="mx-6">
+          Hosting an event or managing an office space? Let us supply fresh
+          fruits for meetings, conferences, and wellness programs. Healthy teams
+          are happy teams!
+        </p>
+        <hr
+          class="w-7 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"
+        />
+      </div>
+    </div>
+
+    
+<!-- CAROUSELS -->
+    <div class="flex flex-col h-[750px] jusify-center items-center py-20 pt-30 bg-gray-100" id="newFruits" data-aos="fade-up" data-aos-duration="3000">
+      <div class="flex flex-col items-center">
+        <h3 class="text-[18px]">Check out the fruits in season</h3>
+        <h2 class="text-[28px] font-bold">Fruits in season</h2>
+         <hr
+          class="w-7 h-1 mx-auto my-2 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"/>
+      </div>
+    
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden h-auto w-[70]" data-carousel-item data-aos="fade-right" data-aos-duration="5000" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <div><img src="/Images/avocado.png" alt=""></div>
+        <div class="flex flex-col items-center justify-center w-[45%]"> <h3 class="text-[32px] font-bold">Avocado</h3>
+          <p class="text-[18px]  w-[85%] py-4">Avocados are a powerhouse of nutrients and healthy fats. They are rich in monounsaturated fatty acids that help lower bad cholesterol and reduce the risk of heart disease. Avocados also contain potassium, even more than bananas, which helps regulate blood pressure.</p> 
+          <button
+              class="px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
+            >View Details</button>
+        </div>
+    </div>
+        </div>
+        <!-- Item 2 -->
+      <div class="hidden h-auto w-[70]" data-carousel-item data-aos="fade-right" data-aos-duration="5000" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+      <div class="fl flex-col md:flex-rowex justify-center items-center">
+        <div><img src="/Images/banana.png" alt=""></div>
+        <div class="flex flex-col items-center justify-center w-[45%]"> <h3 class="text-[32px] font-bold">Banana</h3>
+          <p class="text-[18px]  w-[85%] py-4">Bananas are a naturally sweet, energy-rich fruit that offers a quick fuel boost thanks to their carbohydrate content. They are famously high in potassium, which supports heart health and helps prevent muscle cramps. Bananas also contain vitamin B6, which aids in brain development and function, and tryptophan, which supports mood balance.</p> 
+          <button
+              class="px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
+            >View Details</button>
+        </div>
+    </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden h-auto w-[70]" data-carousel-item data-aos="fade-right" data-aos-duration="3000" data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+      <div class="flex flex-col md:flex-row justify-center items-center">
+        <div><img src="/Images/orange.png" alt=""></div>
+        <div class="flex flex-col items-center justify-center w-[45%]"> <h3 class="text-[32px] font-bold">Orange</h3>
+          <p class="text-[18px]  w-[85%] py-4">Known for their vibrant color and refreshing taste, oranges are bursting with vitamin C, a crucial antioxidant that strengthens the immune system and promotes collagen production for healthier skin. Oranges also provide folate, potassium, and thiamine, all essential for heart and metabolic health. Their rich flavonoid profile, especially hesperidin.</p> 
+          <button
+              class="px-13 py-5 bg-black hover:bg-transparent hover:border-1 hover:border-black hover:text-black text-white"
+            >View Details</button>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+    <!-- Slider controls -->
+    <!-- <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button> -->
+</div>
+
+    </div>
+
+
+<!-- ALL FRUITS -->
+    <div class="flex flex-col h-auto jusify-center items-center my-20" id="allFruits" data-aos="zoom-in-up"  data-aos-duration="3000">
+      <div class="flex flex-col items-center"><h3 class="text-[18px]">Check out our Fruits</h3>
+        <h2 class="text-[28px] font-bold">All Fruits</h2>
+      </div>
+
+      <div class="flex flex-wrap gap-8 mx-30">
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/watermelon.png" alt="" class="py-8">
+            <div class="py-2 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Watermelon Seedless 1 slice</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Watermelon</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,000</h3>
+            <p class="text-gray-500 py-1">Watermelon is more than just a refreshing summer treat — it's over 90% water, making it perfect for hydration.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/avocado.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Avocade Fuerte 1 piece</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Avocado</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,000</h3>
+            <p class="text-gray-500 py-1">Rich in healthy fats, especially monounsaturated fats, avocados support heart health, reduce bad cholesterol.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/orange.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Orange Valencia 1 piece</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Orange</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,000</h3>
+            <p class="text-gray-500 py-1">Loaded with vitamin C, oranges boost immunity, improve skin health, and fight oxidative stress. They also provide hydration</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/carrot.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Carrot Imperator 1 piece</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Carrot</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,000</h3>
+            <p class="text-gray-500 py-1">Crunchy and slightly sweet, carrots are best known for their high beta-carotene content, which the body converts into vitamin A.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/Pears.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Pear Bartlett 1 piece</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Avocado</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,000</h3>
+            <p class="text-gray-500 py-1">Pears are gentle on the digestive system and packed with dietary fiber, making them ideal for improving gut health.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/banana.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Banana Cavendish 1 bunch</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Banana</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;2,500</h3>
+            <p class="text-gray-500 py-1">Bananas are a naturally sweet, energy-rich fruit that offers a quick fuel boost thanks to their carbohydrate content.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/apple.png" alt="" class="py-8">
+            <div class="py-2 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Apple Red Delicious | Green Smith 1 piece</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Apple</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;1,500</h3>
+            <p class="text-gray-500 py-1">Crisp, juicy, and incredibly versatile, apples are a great source of soluble fiber, especially pectin.</p>
+          </div>
+        </div>
+        <div class="flex flex-col h-[400px] w-[250px] my-10">
+          <div class="border-1 border-gray-200 mb-4"><img src="/Images/Dates.png" alt="" class="py-8">
+            <div class="py-5 px-2 text-gray-500 border-t-1 border-gray-200"><p>Type: Date Medjool 10 pieces</p></div>
+          </div>
+          <div>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">Dates</h3>
+            <h3 class="text-[18px] font-semibold py-1 text-gray-600">&#8358;5,000</h3>
+            <p class="text-gray-500 py-1">Dates are nature’s candy, offering a rich, caramel-like sweetness along with impressive nutritional value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- TESTIMONIES -->
+    <div class="flex flex-col items-center justify-center h-auto md:h-[650px] py-10 md:my-20 bg-gray-100">
+      <div class="flex flex-col items-center"><h2 class="text-[28px] font-bold">What Our Buyers Say</h2>
+        <hr
+          class="w-7 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"
+        />
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-10 mx-30">
+        <div class="flex flex-col justify-center items-center h-[370px] md:h-[340px] w-70 md:w-[calc(33.3%-24px)] border-1 border-gray-300 text-gray-500 hover:bg-black hover:text-white" data-aos="fade-up" data-aos-duration="3000">
+          <div class="py-7"><img src="/Images/hds_two.jpg" alt="" class="w-[80px] h-[80px] rounded-full"></div>
+          <div class="px-5 py-2"><p>I recommend FruitVilla to all my clients. From hydration-packed cucumbers to antioxidant-rich oranges, their variety supports every wellness goal. Plus, delivery is always on time!"</p></div>
+          <div class="flex flex-col items-center py-2">
+            <h3 class="text-[18px] font-bold">Chioma A.</h3>
+            <h3 class="text-[18px] font-bold">Lagos</h3>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center h-[370px] md:h-[340px] w-70 md:w-[calc(33.3%-24px)] border-1 border-gray-300 text-gray-500 hover:bg-black hover:text-white" data-aos="fade-up" data-aos-duration="3000">
+          <div class="py-7"><img src="/Images/hds_3.jpg" alt="" class="w-[80px] h-[80px] rounded-full"></div>
+          <div class="px-5 py-2"><p>"My kids are picky eaters, but they actually look forward to our FruitVilla box every week. The apples are crisp, the bananas ripen just right, and the dates are a family favorite."</p></div>
+          <div class="flex flex-col items-center py-2">
+            <h3 class="text-[18px] font-bold">Mrs. Opeyemi A.</h3>
+            <h3 class="text-[18px] font-bold">Ibadan</h3>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center h-[370px] md:h-[340px] w-70 md:w-[calc(33.3%-24px)] border-1 border-gray-300 text-gray-500 hover:bg-black hover:text-white" data-aos="fade-up" data-aos-duration="3000">
+          <div class="py-7"><img src="/Images/hds_one.jpg" alt="" class="w-[80px] h-[80px] rounded-full"></div>
+          <div class="px-5 py-2"><p>"I ordered a custom fruit platter for a bridal shower, and it was absolutely beautiful! The arrangement was stunning, and every fruit was perfectly fresh. Guests couldn't stop complimenting it."</p></div>
+          <div class="flex flex-col items-center py-2">
+            <h3 class="text-[18px] font-bold">Tobi M.</h3>
+            <h3 class="text-[18px] font-bold">Abuja</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+<!-- BRANDS -->
+    <div class="h-[200px] md:h-[250px] md:my-30">
+      <div class="flex justify-center items-center gap-0 md:gap-15">
+        <img src="/Images/Logo_1.png" alt="" class="h-[120px] w-[120px]">
+        <img src="/Images/logo_2.png" alt="" class="h-[150px] w-[150px]">
+        <img src="/Images/logo_3.png" alt="" class="h-[150px] w-[150px]">
+        <img src="/Images/logo_2.png" alt="" class="h-[150px] w-[150px]">
+        <img src="/Images/Logo_1.png" alt="" class="h-[120px] w-[120px]">
+        <img src="/Images/logo_3.png" alt="" class="h-[150px] w-[150px]">
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="flex flex-col md:flex-row justify-center items-center md:py-20 bg-gray-800 text-white h-auto md:h-[500px]">
+      <div class="flex flex-col md:flex-row justify-center items-center my-10 md:my-30">
+        <div class="flex flex-col justify-center w-80 md:w-[calc(33.3%-24px)] my-3">
+          <h3 class="py-4 text-[20px] font-bold">FRUITVILLA</h3>
+          <p class="w-[70%] py-3">FruitVilla is your trusted source for fresh, quality fruits and vegetables.</p>
+          <ul>
+            <li>name@domain.com</li>
+            <li>+234 (222) 143</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col justify-center w-80 md:w-[calc(33.3%-24px)] my-3">
+          <h3 class="py-4 text-[20px] font-bold">ABOUT FRUITVILLA</h3>
+          <ul>
+            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400"><a href="">About Us</a></li>
+            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400"><a href="">Brands</a></li>
+            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400"><a href="">Privacy Policy</a></li>
+            <li class="transition-transform duration-500 ease-in-out hover:translate-x-3 py-3 hover:text-gray-400"><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col justify-center w-80 md:w-[calc(33.3%-24px)] my-3">
+          <h3 class="py-4 text-[20px] font-bold">NEWS LETTER</h3>
+          <p class="w-[80%] py-3">Subscribe to get latest news update and informations</p>
+          <input type="email" name="email" id="" placeholder="Add email" class="rounded-md shadow-gray-500/50">
+        </div>
+      </div>
+    </div>
+    <!-- <<<<<<AOS CDN>>>>>>>>>>> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+      <!-- <<<<<<AOS CDN>>>>>>>>>>> -->
+
+    <!-- FLOWBITE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
