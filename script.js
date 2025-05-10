@@ -1,9 +1,23 @@
+'use strict'
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex'
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+}
+
+
+
+
 const sweetFruits = [
   "Banana",
   "Orange",
   "Watermelon",
   "Pear",
-  "Apple",
+  "A document.querySelector('')pple",
   "Mango",
   "Dates",
   "Guava",

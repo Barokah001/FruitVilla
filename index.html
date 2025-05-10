@@ -38,33 +38,49 @@
       style="
         background: url(/Images/fruit_platter.jpg);
         width: 100%;
-        background-size: cover;"
+        background-size: cover;
+        background-position:center;"
     >
-      <div class="h-[130svh]" style="background-color: rgba(0, 0, 0, 0.322)">
+      <div class="h-[130svh]" style="background-color: rgba(0, 0, 0, 0.418)">
         <nav
-          class="flex justify-between content-center items-center h-20 bg-gray-800 text-white w-full md:fixed top-0 left-0 z-50 px-8 md:px-15"
+          class="flex flex-col h-20 bg-gray-800 text-white w-full"
         >
+      <!-- DESKTOP VIEW -->
+        <div class="flex justify-between content-center items-center h-20 bg-gray-800 text-white w-full md:fixed top-0 left-0 z-50 px-8 md:px-15">
           <div>
             <h1 class="text-[20px]">Fruit<span>Villa</span></h1>
           </div>
-          <div class="flex md:hidden"><i class="las la-bars text-white text-[27px]"></i></div>
-          
-          <div class="hidden md:flex">
-            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth"><a href="#home">Home</a></div>
-            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
-              <a href="#services">Service</a>
-            </div>
-            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
-              <a href="#newFruits">New Fruits</a>
-            </div>
-            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
-              <a href="#allFruits">All Fruits</a>
-            </div>
-            <div class="px-5 text-[20px] hover:text-gray-400 scroll-smooth">
-              <a href="#">Contact Us</a>
-            </div>
+          <div class="flex">
+            <ul class="flex ">
+              <li class="px-5 text-[20px] hidden md:flex hover:text-gray-400 scroll-smooth"><a href="#home">Home</a></li>
+              <li class="px-5 text-[20px] hidden md:flex hover:text-gray-400 scroll-smooth"><a href="#services">Services</a></li>
+              <li class="px-5 text-[20px] hidden md:flex hover:text-gray-400 scroll-smooth"><a href="#newFruits">New Fruits</a></li>
+              <li class="px-5 text-[20px] hidden md:flex hover:text-gray-400 scroll-smooth"><a href="#allFruits">All Fruits</a></li>
+              <li class="px-5 text-[20px] hidden md:flex hover:text-gray-400 scroll-smooth"><a href="#footer">Contact Us</a></li>
+              <li onclick=showSidebar() class="menu-toggle cursor-pointer flex md:hidden"><i class="las la-bars text-white text-[30px] px-5"></i></li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      
+      <!-- MOBILE VIEW -->
+        <div
+          class="sidebar flex flex-col justify-start items-start h-[590px] w-[100%] md:w-[250px] text-white backdrop-blur-[8px] fixed top-0 right-0 z-999 px-8 md:px-15"
+          style="background: rgba(255, 255, 255, 0.185);"
+        >
+          <div  onclick=hideSidebar() class="py-5">
+            <i class="las la-times text-white text-[30px] hover:text-gray-900"></i>
+          </div>
+          <div class="md:flex"> 
+            <ul class="flex flex-col items-start w-full">
+              <li class="py-5 text-[20px] hover:text-gray-900 scroll-smooth "><a href="#home">Home</a></li>
+              <li class="py-5 text-[20px] hover:text-gray-900 scroll-smooth "><a href="#services">Services</a></li>
+              <li class="py-5 text-[20px] hover:text-gray-900 scroll-smooth "><a href="#newFruits">New Fruits</a></li>
+              <li class="py-5 text-[20px] hover:text-gray-900 scroll-smooth "><a href="#allFruits">All Fruits</a></li>
+              <li class="py-5 text-[20px] hover:text-gray-900 scroll-smooth "><a href="#footer">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         <div class="flex flex-col items-center justify-center">
           <h1 class="text-[30px] md:text-[50px] font-bold text-color-white  mt-50">
             Get your desired fruits at reasonable prices
@@ -85,7 +101,7 @@
       </div>
 
       <!-- Positioned Form -->
-      <div class="flex justify-center items-center w-full h-auto md:h-[330px] md:w-[85%] max-w-6xl bg-white absolute top-170 md:top-150 md:left-25 text-black shadow-xl/30 rounded-md mx-auto">
+      <div class="flex justify-center items-center w-[100%] h-auto md:h-[330px] md:w-[85%] bg-white absolute top-170 md:top-150 md:left-25 text-black shadow-xl/30 rounded-md mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center mx-20 my-12">
           <div class="">
             <div class="flex flex-col justify-start items-start mx-auto">
@@ -520,5 +536,6 @@
 
     <!-- FLOWBITE CDN -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
