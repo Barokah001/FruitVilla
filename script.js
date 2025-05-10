@@ -1,12 +1,16 @@
 'use strict'
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
+  const menuToggle = document.querySelector('.menu-toggle')
   sidebar.style.display = 'flex'
+  menuToggle.style.display = 'none'
 }
 
 function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.style.display = "none";
+  const menuToggle = document.querySelector(".menu-toggle");
+  menuToggle.style.display = "block";
 }
 
 
